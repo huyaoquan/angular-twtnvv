@@ -12,6 +12,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 import {AppRoutingModule } from './app-routing.module';
 
+import { HttpClientModule }    from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +27,7 @@ import {AppRoutingModule } from './app-routing.module';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [HeroService, MessageService],
   bootstrap: [AppComponent]
